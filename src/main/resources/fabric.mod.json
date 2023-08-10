@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "dungeonbosses",
+	"version": "${version}",
+	"name": "Dungeon Bosses",
+	"description": "This is a mod to fill the dungeons on OJs Server",
+	"authors": [
+		"Cheicen"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/dungeonbosses/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"oj.dungeonbosses.DungeonBosses"
+		],
+		"client": [
+			"oj.dungeonbosses.DungeonBossesClient"
+		],
+		"fabric-datagen": [
+          "oj.dungeonbosses.DungeonBossesDataGenerator"
+		]
+	},
+	"mixins": [
+		"dungeonbosses.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.21",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
