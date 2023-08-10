@@ -12,5 +12,6 @@ public class DungeonBosses implements ModInitializer {
 	@Override
 	public void onInitialize() {
 
+		LOGGER.info("Loading Bosses");
 	}
 }
